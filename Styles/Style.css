@@ -1,0 +1,81 @@
+@font-face {
+  font-family: Vazir;
+  src: url(../Public/Fonts/Vazir.woff2);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+header {
+  max-width: 90%;
+  height: 100px;
+  background-color: aliceblue;
+  border-radius: 20px;
+  margin: 30px auto;
+}
+.header-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.logo > img {
+  width: 50px;
+}
+.menu {
+  width: 50%;
+}
+.menu > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.menu > ul > li > a {
+  font-size: 20px;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid gray;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 5px;
+  max-width: 250px;
+  
+}
+.search-bar > input::placeholder {
+  color: rgb(45, 42, 42);
+}
+.search-bar > input {
+    display: none;
+  border: none;
+  outline: none;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+}
+.search-bar > input.active {
+  display: block;
+}
+.search-bar > svg {
+  width: 40px;
+}
